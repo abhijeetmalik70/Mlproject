@@ -1,0 +1,4 @@
+[2025-12-24 11:47:15,551] INFO root : data injestion has occured successfully
+[2025-12-24 11:47:15,552] INFO root : read the data for training and testing
+[2025-12-24 11:47:15,552] INFO root : got the data transformer object
+[2025-12-24 11:47:15,553] INFO root : got the data for training and testing 

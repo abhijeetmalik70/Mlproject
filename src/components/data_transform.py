@@ -23,7 +23,7 @@ from dataclasses import dataclass
 
 @dataclass
 class DataTransformationConfig:
-     preprocessor_obj_file_path = os.path.join("artifacts","preprocessor.pkl")
+     preprocessor_obj_file_path = os.path.join("artificats","preprocessor.pkl")
 
 
 class DataTransformation:
@@ -36,26 +36,27 @@ class DataTransformation:
             categorical_cols = ["lunch","gender","race_ethnicity","parental_level_of_education","test_preparation_course"]
             num_pipeline = Pipeline(
                 steps = [
-                    ("scaler", StandardScaler(strategy = "median")),
+                    ("scaler", StandardScaler()),
                     ("imputer",SimpleImputer())
                 ]
             )
             cat_pipeline = Pipeline(
                 steps = [("imputer",SimpleImputer(strategy= "most_frequent")),
-                         "one_hot_encoder",OneHotEncoder()]
+                         ("one_hot_encoder",OneHotEncoder())]
             )
 
             logging.info("numerical cols scaling completed")
             logging.info("categorical cols encoding completed")
 
             preprocessor = ColumnTransformer(
-                steps = [("num_pipeline",num_pipeline,numerical_cols),
+                 [("num_pipeline",num_pipeline,numerical_cols),
                          ("cat_pipeline",cat_pipeline,categorical_cols)]
             )
-
+           
             logging.info("attached both the pipeline together with columnTransformer")
+            return preprocessor
         except Exception as e :
-            pass
+            raise CustomException(e,sys)
 
 
     
@@ -73,7 +74,7 @@ class DataTransformation:
                 logging.info("got the data transformer object")
                 
                 target_col_name = "math_score"
-                numerical_cols = numerical_cols
+                numerical_cols = ["writing_score","reading_score"]
 
                 target_train_features_arr = df_train[target_col_name]
                 input_train_features_arr = df_train.drop(columns = [target_col_name],axis = 1)
@@ -93,8 +94,8 @@ class DataTransformation:
                 logging.info("saved the preprocessing object")
 
                 save_object(
-                     file_path = self.data_transformation_config.preprocessor_obj_file_path,
-                     obj = data_transformer_obj
+                      self.data_transformation_config.preprocessor_obj_file_path,
+                      data_transformer_obj
                 )
 
                 return (train_arr,
@@ -115,5 +116,5 @@ if __name__ == "__main__":
     train_data,test_data = obj_data_injestion.initiate_data_injestion()
 
     obj_data_transformation = DataTransformation()
-    obj_data_transformation.initiate_data_transformation(train_data,test_data)
+    obj_data_transformation.initialise_data_transformer(train_data,test_data)
 

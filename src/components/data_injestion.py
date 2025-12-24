@@ -14,8 +14,8 @@ from src.logger import logging
 
 @dataclass
 class DataIngestionConfig:
-    train_data_path = os.path.join("artificats","train.csv"),
-    test_data_path = os.path.join("artificats","test.csv"),
+    train_data_path = os.path.join("artificats","train.csv")
+    test_data_path = os.path.join("artificats","test.csv")
     raw_data_path = os.path.join("artificats","raw.csv")
 
 
@@ -52,4 +52,9 @@ class DataInjestion:
     
         except Exception as e : 
              raise CustomException(e,sys)
+
+
+
+
+
 
