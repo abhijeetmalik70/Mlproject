@@ -1,0 +1,8 @@
+[2025-12-26 16:35:45,431] INFO root : data injestion has occured successfully
+[2025-12-26 16:35:45,433] INFO root : read the data for training and testing
+[2025-12-26 16:35:45,433] INFO root : numerical cols scaling completed
+[2025-12-26 16:35:45,433] INFO root : categorical cols encoding completed
+[2025-12-26 16:35:45,433] INFO root : attached both the pipeline together with columnTransformer
+[2025-12-26 16:35:45,433] INFO root : got the data transformer object
+[2025-12-26 16:35:45,434] INFO root : got the data for training and testing 
+[2025-12-26 16:35:45,442] INFO root : saved the preprocessing object

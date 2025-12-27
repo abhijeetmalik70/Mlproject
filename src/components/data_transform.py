@@ -76,20 +76,19 @@ class DataTransformation:
                 target_col_name = "math_score"
                 numerical_cols = ["writing_score","reading_score"]
 
-                target_train_features_arr = df_train[target_col_name]
-                input_train_features_arr = df_train.drop(columns = [target_col_name],axis = 1)
+                y_train = df_train[target_col_name] #y_train
+                X_train = df_train.drop(columns = [target_col_name],axis = 1) #X_train
                 
-                target_train_features_arr = df_test[target_col_name]
-                input_test_featues_arr = df_test.drop(columns = [target_col_name],axis = 1)
+                y_test = df_test[target_col_name] #y_test
+                X_test= df_test.drop(columns = [target_col_name],axis = 1) #X_test
                 
 
                 logging.info("got the data for training and testing ")
 
-                input_feature_train = data_transformer_obj.fit_transform(input_train_features_arr)
-                input_feature_test = data_transformer_obj.transform(input_test_featues_arr)
+                input_feature_train = data_transformer_obj.fit_transform(X_train) #X_train_scaled
+                input_feature_test = data_transformer_obj.transform(X_test) #X_test_scaled
 
-                train_arr = np.c_[input_train_features_arr,np.array(input_train_features_arr)]
-                test_arr = np.c_[input_test_featues_arr,np.array(target_train_features_arr)]
+                
 
                 logging.info("saved the preprocessing object")
 
@@ -98,8 +97,10 @@ class DataTransformation:
                       data_transformer_obj
                 )
 
-                return (train_arr,
-                       test_arr,
+                return (input_feature_train,
+                        y_train,
+                       input_feature_test,
+                        y_test,
                        self.data_transformation_config.preprocessor_obj_file_path)
                 
 

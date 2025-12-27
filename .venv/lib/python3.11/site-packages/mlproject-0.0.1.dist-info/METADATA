@@ -2,11 +2,13 @@ Metadata-Version: 2.4
 Name: mlproject
 Version: 0.0.1
 Author: Abhijeet
-Author-email: your@email.com
+Author-email: abhijeetmalik70@gmail.com
 Requires-Dist: numpy
 Requires-Dist: pandas
 Requires-Dist: matplotlib
 Requires-Dist: scikit-learn
+Requires-Dist: catboost
+Requires-Dist: xgboost
 Dynamic: author
 Dynamic: author-email
 Dynamic: requires-dist
