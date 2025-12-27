@@ -1,6 +1,5 @@
 import sys
-
-
+import os 
 
 from sklearn.ensemble import (RandomForestRegressor,
                               AdaBoostRegressor,
@@ -20,10 +19,11 @@ from src.components.data_injestion import DataInjestion
 
 #lets get all the models 
 class ModelTrainConfig:
-    model_train_config = DataTransformation()
+    trained_model_file_path = os.path.join("artificats","model.pkl")
 
 class ModelTrain:
-            model_train_object = ModelTrainConfig()
+            def __init__(self):
+                    self.model_train_config = ModelTrainConfig()
             
 
             
@@ -62,6 +62,9 @@ class ModelTrain:
                                 best_prediction = next(iter(sorted_dict.values()))
                                 print(f"best_mode = {best_model} and best_predict {best_prediction}")
                                 logging.info("printed the best model and its prediction on test data")
+
+                                #save the model 
+                                save_object(self.model_train_config.trained_model_file_path, best_model)
 
                                 return (best_model,best_prediction)
 

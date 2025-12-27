@@ -4,7 +4,7 @@ import pickle
 import sys
 
 
-def save_object(file_path,object):
+def save_object(file_path , object):
     try:
         dir_path = os.path.dirname(file_path)
         os.makedirs(dir_path,exist_ok=True)
