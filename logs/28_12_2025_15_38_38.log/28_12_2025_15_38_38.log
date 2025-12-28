@@ -1,0 +1,10 @@
+[2025-12-28 15:38:39,823] WARNING werkzeug :  * Debugger is active!
+[2025-12-28 15:38:39,829] WARNING werkzeug :  * Debugger is active!
+[2025-12-28 15:38:39,832] INFO werkzeug :  * Debugger PIN: 545-377-834
+[2025-12-28 15:38:39,836] INFO werkzeug :  * Debugger PIN: 545-377-834
+[2025-12-28 15:38:43,217] INFO root : gettig the data in dataframe
+[2025-12-28 15:38:43,217] INFO root : returned the data got form html with the form of data frame
+[2025-12-28 15:38:43,225] INFO root : making the function for the prediction 
+[2025-12-28 15:38:43,413] INFO werkzeug : 127.0.0.1 - - [28/Dec/2025 15:38:43] "POST /predictdata HTTP/1.1" 200 -
+[2025-12-28 15:42:17,856] INFO werkzeug :  * Detected change in '/Users/abhijeetmalik/Desktop/projects/Mlproject/src/pipeline/predict_pipeline.py', reloading
+[2025-12-28 15:42:17,856] INFO werkzeug :  * Detected change in '/Users/abhijeetmalik/Desktop/projects/Mlproject/src/pipeline/predict_pipeline.py', reloading

@@ -64,12 +64,13 @@ class ModelTrain:
                                 logging.info("printed the best model and its prediction on test data")
 
                                 #save the model 
-                                save_object(self.model_train_config.trained_model_file_path, best_model)
+                                save_object(self.model_train_config.trained_model_file_path, models[best_model])
 
-                                return (best_model,best_prediction)
+                                return (models[best_model],best_prediction)
 
                         except Exception as e:
                             raise CustomException(e,sys)
+
 
 
 

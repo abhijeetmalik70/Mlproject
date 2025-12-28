@@ -1,0 +1,6 @@
+[2025-12-28 14:25:44,675] WARNING werkzeug :  * Debugger is active!
+[2025-12-28 14:25:44,686] INFO werkzeug :  * Debugger PIN: 545-377-834
+[2025-12-28 14:25:51,733] INFO root : gettig the data in dataframe
+[2025-12-28 14:25:51,741] INFO root : making the function for the prediction 
+[2025-12-28 14:25:51,935] INFO werkzeug : 127.0.0.1 - - [28/Dec/2025 14:25:51] "POST /predictdata HTTP/1.1" 200 -
+[2025-12-28 14:25:57,955] INFO werkzeug :  * Detected change in '/Users/abhijeetmalik/Desktop/projects/Mlproject/app.py', reloading

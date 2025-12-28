@@ -1,0 +1,10 @@
+[2025-12-28 15:23:25,012] WARNING werkzeug :  * Debugger is active!
+[2025-12-28 15:23:25,018] INFO werkzeug :  * Debugger PIN: 545-377-834
+[2025-12-28 15:23:39,302] INFO werkzeug : 127.0.0.1 - - [28/Dec/2025 15:23:39] "GET / HTTP/1.1" 200 -
+[2025-12-28 15:23:39,320] INFO werkzeug : 127.0.0.1 - - [28/Dec/2025 15:23:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-12-28 15:23:42,628] INFO werkzeug : 127.0.0.1 - - [28/Dec/2025 15:23:42] "GET /predictdata HTTP/1.1" 200 -
+[2025-12-28 15:24:04,157] INFO root : gettig the data in dataframe
+[2025-12-28 15:24:04,157] INFO root : returned the data got form html with the form of data frame
+[2025-12-28 15:24:04,178] INFO root : making the function for the prediction 
+[2025-12-28 15:24:04,367] INFO werkzeug : 127.0.0.1 - - [28/Dec/2025 15:24:04] "POST /predictdata HTTP/1.1" 200 -
+[2025-12-28 15:25:46,024] INFO werkzeug :  * Detected change in '/Users/abhijeetmalik/Desktop/projects/Mlproject/src/components/model_trainer.py', reloading

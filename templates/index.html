@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔥 My ML Project</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f6d365, #fda085);
+            color: #333;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+            text-align: center;
+        }
+
+        main h2 {
+            color: #ff6f61;
+        }
+
+        main p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        a.button {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+            background-color: #ff6f61;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        a.button:hover {
+            background-color: #e65b50;
+        }
+
+        footer {
+            text-align: center;
+            margin: 2rem 0;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to My ML Playground! 😎</h1>
+        <p>Get ready to explore, predict, and have fun with AI!</p>
+    </header>
+    <main>
+        <h2>About This Project</h2>
+        <p>
+            This is an end-to-end Machine Learning project built with Python and Flask.
+            It predicts scores based on student data (or whatever your ML model does).
+            The goal is to give you a fun, interactive way to see ML in action without getting lost in code.
+        </p>
+
+        <h2>How to Use It</h2>
+        <p>
+            1. Navigate to the "Predict Data" page to submit your input. <br>
+            2. Let the model do its magic behind the scenes. <br>
+            3. See your predictions instantly!
+            Don’t worry, it’s fast, safe, and kinda addictive
+        </p>
+
+        <a class="button" href="{{ url_for('predict_datapoint') }}">Go to Predict Page 🚀</a>
+    </main>
+    <footer>
+        Made with ❤️ by Abhijeet Malik | Fun + ML = Awesome
+    </footer>
+</body>
+
+</html>
