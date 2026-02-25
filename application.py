@@ -57,10 +57,12 @@ def about():
 
 
 
+
+     #to run on the local server ./.venv/bin/python -m flask --app app run --debug --host 127.0.0.1 --port 5000
 if __name__ == "__main__":
-    app.run(host = '0.0.0.0',port = 5000,debug = True)
+    app.run(host = '0.0.0.0',port = 5000)
 
 
 
 
-     #to run on the local server http://127.0.0.1:8000
+     
