@@ -1,0 +1,12 @@
+[2025-12-28 21:55:01,205] WARNING werkzeug :  * Debugger is active!
+[2025-12-28 21:55:01,210] WARNING werkzeug :  * Debugger is active!
+[2025-12-28 21:55:01,215] INFO werkzeug :  * Debugger PIN: 545-377-834
+[2025-12-28 21:55:01,218] INFO werkzeug :  * Debugger PIN: 545-377-834
+[2025-12-28 21:55:14,519] INFO werkzeug : 127.0.0.1 - - [28/Dec/2025 21:55:14] "GET /predictdata HTTP/1.1" 200 -
+[2025-12-28 21:55:15,046] INFO werkzeug : 127.0.0.1 - - [28/Dec/2025 21:55:15] "GET / HTTP/1.1" 200 -
+[2025-12-28 21:55:24,353] INFO werkzeug : 127.0.0.1 - - [28/Dec/2025 21:55:24] "GET / HTTP/1.1" 200 -
+[2025-12-28 21:55:25,833] INFO werkzeug : 127.0.0.1 - - [28/Dec/2025 21:55:25] "GET /about HTTP/1.1" 200 -
+[2025-12-28 21:57:31,702] INFO werkzeug : 127.0.0.1 - - [28/Dec/2025 21:57:31] "GET /about HTTP/1.1" 200 -
+[2025-12-28 21:57:32,144] INFO werkzeug : 127.0.0.1 - - [28/Dec/2025 21:57:32] "GET / HTTP/1.1" 200 -
+[2025-12-28 21:57:43,449] INFO werkzeug :  * Detected change in '/Users/abhijeetmalik/Desktop/projects/Mlproject/app.py', reloading
+[2025-12-28 21:57:43,449] INFO werkzeug :  * Detected change in '/Users/abhijeetmalik/Desktop/projects/Mlproject/app.py', reloading

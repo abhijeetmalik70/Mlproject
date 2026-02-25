@@ -1,0 +1,9 @@
+[2025-12-30 17:26:59,843] WARNING werkzeug :  * Debugger is active!
+[2025-12-30 17:26:59,852] INFO werkzeug :  * Debugger PIN: 545-377-834
+[2025-12-30 17:27:01,608] INFO werkzeug : 127.0.0.1 - - [30/Dec/2025 17:27:01] "GET / HTTP/1.1" 200 -
+[2025-12-30 17:27:04,367] INFO werkzeug : 127.0.0.1 - - [30/Dec/2025 17:27:04] "GET /predictdata HTTP/1.1" 200 -
+[2025-12-30 17:27:24,799] INFO root : gettig the data in dataframe
+[2025-12-30 17:27:24,799] INFO root : returned the data got form html with the form of data frame
+[2025-12-30 17:27:24,811] INFO root : making the function for the prediction 
+[2025-12-30 17:27:25,268] INFO root : did the prediction using scaled data 
+[2025-12-30 17:27:25,268] INFO werkzeug : 127.0.0.1 - - [30/Dec/2025 17:27:25] "POST /predictdata HTTP/1.1" 200 -

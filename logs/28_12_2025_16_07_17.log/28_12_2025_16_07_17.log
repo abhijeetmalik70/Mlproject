@@ -2,3 +2,5 @@
 [2025-12-28 16:07:18,343] INFO werkzeug :  * Debugger PIN: 545-377-834
 [2025-12-28 16:07:27,621] INFO werkzeug : 127.0.0.1 - - [28/Dec/2025 16:07:27] "GET / HTTP/1.1" 200 -
 [2025-12-28 16:07:31,442] INFO werkzeug : 127.0.0.1 - - [28/Dec/2025 16:07:31] "GET / HTTP/1.1" 200 -
+[2025-12-28 21:51:59,076] INFO werkzeug : 127.0.0.1 - - [28/Dec/2025 21:51:59] "GET / HTTP/1.1" 200 -
+[2025-12-28 21:54:58,106] INFO werkzeug :  * Detected change in '/Users/abhijeetmalik/Desktop/projects/Mlproject/app.py', reloading

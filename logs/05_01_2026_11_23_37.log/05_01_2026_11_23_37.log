@@ -1,0 +1,12 @@
+[2026-01-05 11:23:38,847] WARNING werkzeug :  * Debugger is active!
+[2026-01-05 11:23:38,860] INFO werkzeug :  * Debugger PIN: 545-377-834
+[2026-01-05 11:23:47,566] INFO werkzeug : 127.0.0.1 - - [05/Jan/2026 11:23:47] "GET / HTTP/1.1" 200 -
+[2026-01-05 11:23:47,788] INFO werkzeug : 127.0.0.1 - - [05/Jan/2026 11:23:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2026-01-05 11:23:47,789] INFO werkzeug : 127.0.0.1 - - [05/Jan/2026 11:23:47] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
+[2026-01-05 11:23:47,896] INFO werkzeug : 127.0.0.1 - - [05/Jan/2026 11:23:47] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
+[2026-01-05 11:23:55,593] INFO werkzeug : 127.0.0.1 - - [05/Jan/2026 11:23:55] "GET /predictdata HTTP/1.1" 200 -
+[2026-01-05 11:24:34,504] INFO root : gettig the data in dataframe
+[2026-01-05 11:24:34,505] INFO root : returned the data got form html with the form of data frame
+[2026-01-05 11:24:34,534] INFO root : making the function for the prediction 
+[2026-01-05 11:24:35,034] INFO root : did the prediction using scaled data 
+[2026-01-05 11:24:35,035] INFO werkzeug : 127.0.0.1 - - [05/Jan/2026 11:24:35] "POST /predictdata HTTP/1.1" 200 -
