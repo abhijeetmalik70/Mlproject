@@ -1,5 +1,6 @@
 📊 Student Performance Prediction – End-to-End Machine Learning Project
 An end-to-end machine learning system that predicts student performance based on various input features. The project follows a modular ML pipeline architecture, including data ingestion, transformation, model training, and deployment through a web interface.
+
 🚀 Project Overview
 This project demonstrates a complete production-style ML workflow:
 Data ingestion and preprocessing
@@ -9,9 +10,13 @@ Pipeline-based prediction system
 Web deployment using Flask
 Logging and custom exception handling
 The system is structured for scalability, maintainability, and deployment readiness.
+
+
 🧠 Problem Statement
 The goal is to predict student performance scores based on various academic and demographic features.
 This helps in understanding key factors influencing academic success and can be used for educational analytics.
+
+
 🏗️ Project Architecture
 The project follows a modular pipeline structure:
 
