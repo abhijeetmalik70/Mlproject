@@ -14,7 +14,46 @@ The goal is to predict student performance scores based on various academic and 
 This helps in understanding key factors influencing academic success and can be used for educational analytics.
 🏗️ Project Architecture
 The project follows a modular pipeline structure:
-tree src
+
+
+                    ┌──────────────────────┐
+                    │     Raw Dataset      │
+                    │      (CSV Files)     │
+                    └─────────┬────────────┘
+                              │
+                              ▼
+              ┌──────────────────────────────┐
+              │     Data Ingestion Layer     │
+              │   (train-test split, load)   │
+              └─────────┬────────────────────┘
+                        │
+                        ▼
+        ┌──────────────────────────────────────┐
+        │     Data Transformation Layer        │
+        │  (encoding, scaling, preprocessing)  │
+        └─────────┬────────────────────────────┘
+                  │
+                  ▼
+        ┌──────────────────────────────────────┐
+        │        Model Training Layer          │
+        │   (training, evaluation, tuning)     │
+        └─────────┬────────────────────────────┘
+                  │
+                  ▼
+        ┌──────────────────────────────────────┐
+        │     Prediction Pipeline Layer       │
+        │   (model + preprocessor inference)  │
+        └─────────┬────────────────────────────┘
+                  │
+                  ▼
+        ┌──────────────────────────────────────┐
+        │         Flask Web Application        │
+        │      Real-time Predictions UI        │
+        └──────────────────────────────────────┘
+
+
+
+
 📂 Repository Structure
 
 
