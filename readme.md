@@ -16,7 +16,7 @@ This helps in understanding key factors influencing academic success and can be 
 The project follows a modular pipeline structure:
 tree src
 📂 Repository Structure
-
+"""
 ├── artifacts/                   # Saved models & preprocessing objects
 │   ├── model.pkl
 │   ├── preprocessor.pkl
@@ -40,7 +40,7 @@ tree src
 ├── requirements.txt             # Dependencies
 ├── setup.py                     # Package setup
 ├── readme.md                    # Project documentation
-
+"""
 
 ⚙️ Tech Stack
 Programming Language: Python 🐍
