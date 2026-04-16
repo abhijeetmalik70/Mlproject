@@ -15,8 +15,6 @@ This helps in understanding key factors influencing academic success and can be 
 🏗️ Project Architecture
 The project follows a modular pipeline structure:
 tree src
-
-
 📂 Repository Structure
 
 ├── artifacts/                   # Saved models & preprocessing objects
@@ -42,7 +40,6 @@ tree src
 ├── requirements.txt             # Dependencies
 ├── setup.py                     # Package setup
 ├── readme.md                    # Project documentation
-
 
 
 ⚙️ Tech Stack
