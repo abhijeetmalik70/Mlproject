@@ -14,12 +14,11 @@ The goal is to predict student performance scores based on various academic and 
 This helps in understanding key factors influencing academic success and can be used for educational analytics.
 🏗️ Project Architecture
 The project follows a modular pipeline structure:
-
 src/
 │
 ├── components/
 │   ├── data_ingestion.py        → Loads and splits dataset
-│   ├── data_transformation.py   → Feature engineering & preprocessing
+│   ├── data_transform.py        → Feature engineering & preprocessing
 │   ├── model_trainer.py         → Model training & evaluation
 │
 ├── pipeline/
@@ -28,8 +27,7 @@ src/
 │
 ├── exception.py                 → Custom exception handling
 ├── logger.py                    → Logging utility
-├── utils.py                    → Helper functions
-
+├── utils.py                     → Helper functions
 
 
 📂 Repository Structure
